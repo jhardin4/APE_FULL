@@ -1,0 +1,656 @@
+gantry is connected
+
+Ultimus pump0 is connected on port 9
+
+camera is connected.
+camera is availible.
+
+system is connected.
+
+Ultimus/A3200 pump0/gantry aeropump0 is connected using ZZ1 bit 2
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+Keyence Touchprobe using gantry using ZZ1 bit 0
+
+Commands Loaded
+
+Commands Loaded
+
+G01 ZZ1 0.000000 F 40.000000 
+
+G01 X 20.000000 Y 5.000000 F 40.000000 
+
+
+system waited  s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited  s.
+system waited 60 s.
+system waited  s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited  s.
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 5.000000 Y 5.000000 F 40.000000 
+
+G01 ZZ1 0.000000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 10.000000 Y 5.000000 ZZ1 0.000000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 5.000000 Y 10.000000 F 40.000000 
+
+G01 ZZ1 0.010000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 10.000000 Y 10.000000 ZZ1 0.010000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 5.000000 Y 15.000000 F 40.000000 
+
+G01 ZZ1 0.020000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 10.000000 Y 15.000000 ZZ1 0.020000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 15.000000 Y 5.000000 F 40.000000 
+
+G01 ZZ1 0.030000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 20.000000 Y 5.000000 ZZ1 0.030000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 15.000000 Y 10.000000 F 40.000000 
+
+G01 ZZ1 0.040000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 20.000000 Y 10.000000 ZZ1 0.040000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+system ran a program
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X 15.000000 Y 15.000000 F 40.000000 
+
+G01 ZZ1 0.050000 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+
+pump0 is set to 100kPa pressure and kPa vacuum.
+
+
+system waited 1 s.
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+system waited 0.30033119999999996 s.
+Commands Loaded
+
+G01 X 20.000000 Y 15.000000 ZZ1 0.050000 F 452.898551 
+
+
+system waited 0 s.
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+system waited 1 s.
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 F 40.000000 
+
+
+
+Commands Loaded
+
+Commands Loaded
+
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 20.000000 ZZ2 20.000000 ZZ3 20.000000 ZZ4 20.000000 F 40.000000 
+
+G01 X 0.000000 Y 50.000000 F 40.000000 
+
+
+gantry is disconnected.
+
+
+pump0 is disconnected.
+
+
+aeropump0 is disconnected.
+
+
+TProbe is disconnected.
+
+camera is disconnected.
+
+system is disconnected.
+
