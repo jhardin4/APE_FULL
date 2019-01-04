@@ -1,0 +1,16 @@
+Apparatus-Procedure-Executor (APE)
+
+Objective: Portable Automation Software to Facilitate Advancements
+in Science and Engineering
+
+-Accessible to multiple user skill levels
+-Cross platform functional
+-Enable faster debugging of complex automated systems
+-Enable better tracking of information and decision making in these systems
+
+File Organization-
+Main Folder - The APE CORE files and this standard file
+Log Folder - Location for the storage of all historical informaiton
+Data Folder - Location for storage of of all "Active" information not held in the apparatus
+Other Folders - The functions associated with that folder and an associated 
+standards file
