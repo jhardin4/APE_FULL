@@ -1,16 +1,10 @@
 # This is the main file that calls all of the other elements of APE
 
 # APE framework.  Procedure may not be necessary
-from Apparatus import apparatus
-from Procedure import procedure
-from Executor import executor
+import Core
+import Procedures
 
 # Import the procedure sets that are needed
-import Procedures_SampleTray
-import Procedures_Toolpath
-import Procedures_Planner
-import Procedures_InkCal
-import Procedures_Alignments
 
 # Import other libraries
 import FlexPrinterApparatus  # This is specific to the Flex Printer at AFRL
@@ -18,8 +12,8 @@ import XlineTPGen as TPGen  # Toolpath generator
 import time
 
 # Create apparatus and executor
-MyApparatus = apparatus()
-MyExecutor = executor()
+MyApparatus = Core.Apparatus()
+MyExecutor = Core.Executor()
 MyExecutor.debug = True  # Leave this as-is for now.
 
 #____FLexPrinterApparatus____#
@@ -27,8 +21,8 @@ MyExecutor.debug = True  # Leave this as-is for now.
 # apparatus specific to the Flex Printer at AFRL
 
 materials = [{'AgPMMA': 'ZZ1'}]
-tools = [{'name': 'TProbe', 'axis': 'ZZ2', 'type': 'Keyence_TouchProbe'}]
-tools.append({'name': 'camera', 'axis': 'ZZ4', 'type': 'Ueye_Camera'})
+tools = [{'name': 'TProbe', 'axis': 'ZZ2', 'type': 'Keyence_GT2_A3200'}]
+tools.append({'name': 'camera', 'axis': 'ZZ4', 'type': 'IDS_ueye'})
 
 FlexPrinterApparatus.Build_FlexPrinter(materials, tools, MyApparatus)
 mat0 = [list(materials[n])[0] for n in range(len(materials))][0]
@@ -57,21 +51,21 @@ MyApparatus.Connect_All(MyExecutor, simulation=True)
 
 # Create instances of the procedures that will be used
 # Procedures that will almost always be used at this level
-AlignPrinter = Procedures_Alignments.Align(MyApparatus, MyExecutor)
+AlignPrinter = Procedures.User_FlexPrinter_Alignments_Align(MyApparatus, MyExecutor)
 
 # Procedures for doing automated experiments
-BuildGrid = Procedures_SampleTray.Setup_XYGridTray(MyApparatus, MyExecutor)
-SampleGrid = Procedures_SampleTray.SampleTray(MyApparatus, MyExecutor)
-CalInk = Procedures_InkCal.Calibrate(MyApparatus, MyExecutor)
+BuildGrid = Procedures.SampleTray_XY_Setup(MyApparatus, MyExecutor)
+SampleGrid = Procedures.SampleTray_Start(MyApparatus, MyExecutor)
+CalInk = Procedures.User_InkCal_Calibrate(MyApparatus, MyExecutor)
 
 # Build the procedure to be done at each sample position
-class PrintSample(procedure):
+class PrintSample(Core.Procedure):
     def Prepare(self):
         self.name = 'PrintSample'
         self.requirements['samplename'] = {'source': 'apparatus', 'address': '', 'value': '', 'desc': 'name of this sample for logging purposes'}
-        self.gentp = Procedures_Toolpath.Generate_Toolpath(MyApparatus, MyExecutor)
-        self.printtp = Procedures_Toolpath.Print_Toolpath(MyApparatus, MyExecutor)
-        self.planner = Procedures_Planner.Combinatorial_Planner(self.apparatus, self.executor)
+        self.gentp = Procedures.Toolpath_Generate(MyApparatus, MyExecutor)
+        self.printtp = Procedures.Toolpath_Print(MyApparatus, MyExecutor)
+        self.planner = Procedures.Planner_Combinatorial(self.apparatus, self.executor)
 
     def Plan(self):
         # Renaming useful pieces of informaiton

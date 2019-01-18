@@ -2,7 +2,7 @@ def Build_FlexPrinter(materials, tools, apparatus):
     
     #General Printer settings
     devices = {}
-    devices['gantry']={'type':'A3200Dev', 'model':'Flex Printer', 'descriptors':['motion'],'addresstype':'pointer'}
+    devices['gantry']={'type':'Aerotech_A3200_FlexPrinter', 'model':'Flex Printer', 'descriptors':['motion'],'addresstype':'pointer'}
     devices['gantry']['default'] = {'speed':40, 'length_units':'mm', 'MotionRamp':1000, 'MaxAccel':1000, 'RelAbs':'Abs', 'LookAhead':True, 'mode':'loadrun', 'axismask':{}}
     apparatus['information']['materials']={}
     apparatus['information']['alignments']={}
@@ -44,14 +44,14 @@ def Build_FlexPrinter(materials, tools, apparatus):
     #pumps
     n = 0
     for materialx in materials:
-        devices['pump'+str(n)]={'type':'UltimusVDev', 'COM':'','pressure':0, 'vacuum':0, 'pumprestime':0,'pumpontime':0, 'pumpofftime':0, 'midtime':0, 'addresstype':'pointer','descriptors':[]}
-        devices['aeropump'+str(n)]={'type':'UltimusVDev_A3200', 'pumpname':'pump'+str(n), 'A3200name':'gantry', 'IOaxis': 'ZZ1', 'IObit':2 ,'pressure':0, 'vacuum':0, 'pumprestime':0,'pumpontime':0, 'pumpofftime':0, 'midtime':0, 'addresstype':'pointer','descriptors':[]}
+        devices['pump'+str(n)]={'type':'Nordson_UltimusV', 'COM':'','pressure':0, 'vacuum':0, 'pumprestime':0,'pumpontime':0, 'pumpofftime':0, 'midtime':0, 'addresstype':'pointer','descriptors':[]}
+        devices['aeropump'+str(n)]={'type':'Nordson_UltimusV_A3200', 'pumpname':'pump'+str(n), 'A3200name':'gantry', 'IOaxis': 'ZZ1', 'IObit':2 ,'pressure':0, 'vacuum':0, 'pumprestime':0,'pumpontime':0, 'pumpofftime':0, 'midtime':0, 'addresstype':'pointer','descriptors':[]}
         n += 1
     # Tools
     for tool in tools:
         devices[tool['name']] = {}
         devices[tool['name']]['type'] = tool['type']
-        if tool['type'] == 'Keyence_TouchProbe':
+        if tool['type'] == 'Keyence_GT2_A3200':
             # Default Settings
             devices[tool['name']]['addresstype'] = 'pointer'
             devices[tool['name']]['A3200name'] = 'gantry'
@@ -70,7 +70,7 @@ def Build_FlexPrinter(materials, tools, apparatus):
             apparatus['information']['alignments'][tool['name'] + '@mark'] = {'X': '', 'Y': '', tool['axis']: ''}
             apparatus['information']['alignments'][tool['name'] + '@TP_init'] = {'X': -200, 'Y': -250, 'ZZ2': -50}
 
-        if tool['type'] == 'Ueye_Camera':
+        if tool['type'] == 'IDS_ueye':
             devices[tool['name']]['addresstype'] = 'pointer'
             devices[tool['name']]['settle_time'] = 5
 
