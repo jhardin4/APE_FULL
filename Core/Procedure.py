@@ -39,7 +39,7 @@ class Procedure():
         
         #Handle apparatus values
         for req in self.requirements:
-            if self.requirements[req]['source']=='apparatus':
+            if self.requirements[req]['source'] == 'apparatus' and self.requirements[req]['address'] != '':
                 tempvalue = self.apparatus.getValue(self.requirements[req]['address'])
                 if tempvalue!='Invalid ApparatusAddress':
                     self.requirements[req]['value']=tempvalue
