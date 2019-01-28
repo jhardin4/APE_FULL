@@ -1,6 +1,8 @@
 # APE framework.  Procedure may not be necessary
-import Core.
+import Core
 import Procedures
+
+# Import the procedure sets that are needed
 
 # Import other libraries
 import FlexPrinterApparatus  # This is specific to the Flex Printer at AFRL
@@ -15,9 +17,9 @@ MyExecutor.debug = True  # Leave this as-is for now.
 # ____FLexPrinterApparatus____#
 # Set up a basic description of the system that is later used to create an
 # apparatus specific to the Flex Printer at AFRL
-materials = [{'AgPMMA': 'ZZ1'}]
 
-# This is the list of extra tools. Unused ones can just be commented out.
+materials = [{'AgPMMA': 'ZZ1'}]
+# These are other tools that can be added in. Comment out the ones not used.
 tools = []
 # tools.append({'name': 'TProbe', 'axis': 'ZZ2', 'type': 'Keyence_GT2_A3200'})
 # tools.append({'name': 'camera', 'axis': 'ZZ4', 'type': 'IDS_ueye'})
@@ -45,8 +47,6 @@ MyApparatus['information']['toolpaths']['parameters'] = TPGen.Make_TPGen_Data(ma
 MyApparatus['information']['toolpaths']['toolpath'] = [0]
 MyApparatus['information']['ink calibration']['time'] = 30
 
-# These are just to create variables in the Spyder variable explorer which
-# facilitate debugging
 information = MyApparatus['information']
 proclog = MyApparatus['proclog']
 
@@ -74,8 +74,7 @@ class PrintSample(Core.Procedure):
     def Plan(self):
         # Renaming useful pieces of informaiton
         samplename = self.requirements['samplename']['value']
-        # Planner details are commented out for simplicity but I did want and
-        # example in this file.
+        
         '''
         # Set the plan space from tip height and anticipated trace height
         space = {'tiph': [0.01*n for n in range(8)]}

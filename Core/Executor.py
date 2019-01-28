@@ -24,7 +24,7 @@ class Executor():
         if self.devicelist[eproc['devices']]['AddressType'] == 'pointer':
             if not self.debug:
                 try:
-                    self.log += 'Time: ' + str(round(time.time(), 3)) + '\n'
+                    self.log += "Time: " + str(round(time.time(), 3)) + '\n'
                     if eproc['details'] == {}:
                         self.log += getattr(self.devicelist[eproc['devices']]['Address'],
                                             eproc['procedure'])()
@@ -46,7 +46,7 @@ class Executor():
                     raise Exception('EXECUTOR SEND FAILURE')
 
             else:
-                self.log += 'Time: ' + str(round(time.time(), 3)) + '\n'
+                self.log += "Time: " + str(round(time.time(), 3)) + '\n'
                 if eproc['details'] == {}:
                     self.log += getattr(self.devicelist[eproc['devices']]['Address'],
                                         eproc['procedure'])()

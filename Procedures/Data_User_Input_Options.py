@@ -34,7 +34,19 @@ class Data_User_Input_Options(Procedure):
                 option_string += ', '
         option_string += ')'
         print(option_string)
-        self.response = input('')
-        if self.response == '':
-            self.response = default
+        response_list = [options[n] for n in range(len(options))]
+        response_list.append('stop')
+        acceptable_response = False
+        while not acceptable_response:
+            self.response = input('')
+            if self.response == '':
+                self.response = default
+            if self.response in response_list:
+                acceptable_response = True
+            else:
+                print('Incorrect response.')
+
+        if self.response == 'stop':
+            self.Report(string=self.response)
+            raise Exception('User requested stop')
         self.Report(string=self.response)

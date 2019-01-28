@@ -1,0 +1,171 @@
+Time: 1548696312.708
+gantry is connected
+
+Time: 1548696312.713
+Ultimus pump0 is connected on port 9
+
+Time: 1548696312.718
+system is connected.
+
+Time: 1548696312.723
+Ultimus/A3200 pump0/gantry aeropump0 is connected using ZZ1 bit 2
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+Time: 1548696318.782
+system ran a program, <function GenerateToolpath at 0x00000295E49C50D0>
+
+Time: 1548696319.369
+
+Time: 1548696319.375
+Commands Loaded
+
+Time: 1548696319.38
+Commands Loaded
+
+Time: 1548696319.386
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 -6.644274 ZZ2 -5.000002 ZZ3 -4.999999 ZZ4 -4.999877 F 40.000000 
+
+G01 X -241.201729 Y -286.691663 F 40.000000 
+
+
+Time: 1548696319.397
+
+Time: 1548696319.403
+Commands Loaded
+
+Time: 1548696319.409
+Commands Loaded
+
+Time: 1548696319.414
+
+Time: 1548696319.42
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 X -257.591612 Y -290.691593 F 40.000000 
+
+G01 ZZ1 -135.044274 F 40.000000 
+
+Axis mask changed to {'Z': 'ZZ1'}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+
+Time: 1548696319.426
+pump0 is set to 155kPa pressure and kPa vacuum.
+
+
+Time: 1548696319.432
+system waited 1 s.
+
+Time: 1548696319.437
+Bit 2 on the ZZ1 set to 1
+aeropump0 is on.
+
+Time: 1548696319.443
+system waited 0.3827999999999724 s.
+
+Time: 1548696319.449
+Commands Loaded
+
+Time: 1548696319.455
+G01 X -252.591612 Y -290.691593 ZZ1 -135.044274 F 1.811594 
+
+
+Time: 1548696319.461
+system waited 0 s.
+
+Time: 1548696319.465
+Bit 2 on the ZZ1 set to 0
+aeropump0 is off.
+
+Time: 1548696319.471
+system waited 1 s.
+
+Time: 1548696319.478
+
+Time: 1548696319.484
+Commands Loaded
+
+Time: 1548696319.489
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 -6.644274 F 40.000000 
+
+
+Time: 1548696319.495
+
+Time: 1548696319.501
+Commands Loaded
+
+Time: 1548696319.513
+Commands Loaded
+
+Time: 1548696319.518
+Axis mask changed to {}
+G90 
+
+G71 
+
+RAMP RATE 1000
+
+CoordinatedAccelLimit = 1000
+
+VELOCITY ON 
+
+G01 ZZ1 -6.644274 ZZ2 -5.000002 ZZ3 -4.999999 ZZ4 -4.999877 F 40.000000 
+
+G01 X -241.201729 Y -286.691663 F 40.000000 
+
+
+Time: 1548696320.573
+gantry is disconnected.
+
+
+Time: 1548696320.583
+pump0 is disconnected.
+
+
+Time: 1548696320.592
+aeropump0 is disconnected.
+
+
+Time: 1548696320.604
+system is disconnected.
+
