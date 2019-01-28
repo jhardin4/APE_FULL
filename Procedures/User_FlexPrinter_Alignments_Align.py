@@ -14,6 +14,7 @@ class User_FlexPrinter_Alignments_Align(Procedure):
         self.requirements['filename']['address']=['information','alignmentsfile']
         self.updatealign = Procedures.User_FlexPrinter_Alignments_Update(self.apparatus, self.executor)
         self.derivealign = Procedures.User_FlexPrinter_Alignments_Derive(self.apparatus, self.executor)
+        self.askuser = Procedures.Data_User_Input_Options(self.apparatus, self.executor)
     
     def Plan(self):
         measuredlist = self.requirements['Measured_List']['value']
@@ -24,7 +25,11 @@ class User_FlexPrinter_Alignments_Align(Procedure):
         
         # Check for loading file
         alignmentscollected = False
-        doalignment = input('Import alignments from file?([y]/n/filename)')
+        message = 'Import alignments from file?'
+        options = ['y','n','filename']
+        default = 'y'
+        self.askuser.Do({'message': message, 'options': options, 'default': default})
+        doalignment = self.askuser.response
         if doalignment in ['y', 'Y', 'yes', 'Yes', 'YES', '']:
             afilename = input('What filename?([' + filename + '])')
             if afilename == '':
